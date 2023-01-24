@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Password Generator</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<button id="generate-password-btn">Generate Password</button>
+<input type="text" id="password-input" disabled>
+<script>
+  document.getElementById("generate-password-btn").addEventListener("click", function(){
+    // characters to use in the password
+    // var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*";
+    var characters = "0123456789";
+    var password = "";
+
+    // generate a random password of length 16
+    for (var i = 0; i < 6; i++) {
+      password += characters.charAt(Math.floor(Math.random() * characters.length));
+    }
+
+    // display the generated password in the input field
+    document.getElementById("password-input").value = password;
+  });
+</script>
+	
+</body>
+</html>

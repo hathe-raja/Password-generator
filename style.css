@@ -1,0 +1,37 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+
+#generate-password-btn {
+  font-size: 1.2em;
+  padding: 0.5em 1em;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#generate-password-btn:hover {
+  background-color: #3e8e41;
+}
+
+#password-input {
+  font-size: 1.2em;
+  padding: 0.5em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
